@@ -33,7 +33,7 @@ namespace CG_2._1
             sky.Fill = new ImageBrush(new BitmapImage(new Uri("IMG\\sky.png", UriKind.Relative)));
             sky.Margin = new Thickness(-250, -200, 0, 0);
             canvas.Children.Add(sky);
-            x = 1;
+            x = 0.1;
 
             timer = new System.Timers.Timer(41);
             timer.Elapsed += timer_Elapsed;
@@ -59,7 +59,7 @@ namespace CG_2._1
             if (faster)
                 x += 0.05;
             else
-                x -= 0.05;
+                x -=0.05;
         }
     }
 }
